@@ -1,0 +1,214 @@
+
+.product-image {
+    width: 160px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #e6d8d8;
+    margin: 7px;
+    height: 250px;
+    box-shadow: 2px 2px 3px #f3ecec;
+}
+
+.image-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+
+.image-container {
+    height: 94%;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-head {
+    display: flex;
+    justify-content: space-between;
+    height: 6%;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    align-items: center;
+}
+
+.product-head div {
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.product-head div:nth-child(2) {
+    text-align: right;
+}
+
+.icon-container {
+    position: absolute;
+    display: flex;
+    top: -7px;
+    padding: 8px;
+    height: 0px;
+    width: 0px;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    border-radius: 50%;
+    border: 1px solid;
+    font-weight: bold;
+    z-index: 2;
+    cursor: pointer;
+    background: white;
+    font-size: 18px;
+}
+
+/* .icon-container:hover+.product-details {
+    opacity: 1;
+    z-index: 1;
+} */
+.icon-container:hover{
+    background: white;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+
+.product-details {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #272d83f2;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    font-size: 13px;
+}
+.product-details table {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.image-checkbox {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.image-checkbox:checked {
+    opacity: 1;
+}
+div:has(> .image-checkbox:checked) {
+    border: 3px solid blue;
+}
+
+button#load_more:hover {
+    box-shadow: 0px 0px 1px blue;
+}
+
+button#load_more {
+    padding: 10px;
+    outline: none;
+    margin: 50px;
+    margin-right: auto;
+    color: white;
+    background: blue;
+    border: none;
+    box-shadow: 0px 0px 2px blue;
+    cursor: pointer;
+}
+
+.create-btn {
+    padding: 10px;
+    outline: none;
+    color: white;
+    background: blue;
+    border: none;
+    box-shadow: 0px 0px 6px #0000009e;
+    cursor: pointer;
+    top: 5px;
+    left: 10px;
+    z-index: 6;
+    text-decoration: none;
+    position: absolute;
+    margin-left: auto;
+}
+
+.v-action-container {
+    height: 0px;
+    overflow: visible;
+    top: 0;
+    position: sticky;
+    z-index: 5;
+    height: 50px;
+}
+
+#v_product_details_container {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+div#popup_image_container {
+    position: absolute;
+    top: 10px;
+    max-height: 555px;
+    height: 555px;
+    width: 60%;
+    z-index: 10;
+    margin: auto;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: white;
+    box-shadow: 1px 2px 40px #000000b8;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+button#popup_close_button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+    background: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+#popup_image_container img {
+    width: auto;
+    height: 90%;
+    object-fit: contain;
+    overflow: hidden;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"
+    ></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- @autor - Vinoth S ( vinothelysian@gmail.com ) -->
+    <div class="v-action-container">
+      <a
+        class="create-btn"
+        type="button"
+        id="create_catalog"
+        target="_blank"
+        href="https://creatorapp.zoho.in/shivshaktitextiles/catalog#Form:Catalog?zc_LoadIn=dialog&Selected_Products="
+      >
+        Create Catalog
+      </a>
+
+      <!-- Pop up image display -->
+      <div style="display: none" id="popup_image_container">
+        <button id="popup_close_button">X</button>
+        <div id="v_product_details_container"></div>
+        <img src="" alt="image" />
+      </div>
+    </div>
+
+    <!-- @autor - Vinoth S ( vinothelysian@gmail.com ) -->
+
+    <div class="v-body">
+      <!-- Image Gallery -->
+      <div class="image-gallery"></div>
+    </div>
+    <form id="catalog_image"></form>
+
+    <div><button id="load_more">Load More</button></div>
+  </body>
+</html>
